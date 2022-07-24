@@ -5,16 +5,16 @@
     <h1>Welcome to Craigslist Jr</h1>
 </div>
 <div>
-    <ul>
+    
         {% for category in categories %}
-        <li >
+        
             <a href="{% url 'cat_view' category.id %}">{{category.title}}</a>
-        </li>
+        <br>
         {% endfor %}
-    </ul>
+    <br>
 
 </div>
 <div>
-    <a href = "{% url 'cat_new' %}">Add New Category</a>
+    <button><a href = "{% url 'cat_new' %}">Add New Category</a></button>
 </div>
 {%endblock%}

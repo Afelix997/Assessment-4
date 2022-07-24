@@ -7,8 +7,6 @@
     <h4>{{post.description}}</h4>
     <p>{{post.posted_by}}</p>
     <p>{{post.email}}</p>
-    <a href = "">Edit Post</a>
-    <br>
-    <a href = "">Delete Post</a>
+    <button><a href = "{% url 'post_edit' category.id post.id %}">Edit Post</a></button>
 </div>
 {% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'craigslistjr/layout.html' %}
+{%block scripts%} 
+<script src = "/static/js/post_edit.js" defer></script>
+{%endblock%}
+
+{%block content%}
+
+<h1>Edit Post</h1>
+<label>Title:</label>
+<input id = "newTitle" value="{{post.title}}"></input>
+<br>
+<label>Description:</label>
+<input id = "newDesc" value="{{post.description}}"></input>
+<br>
+<label>Posted By:</label>
+<input id = "newPostBy" value="{{post.posted_by}}"></input>
+<br>
+<label>Email:</label>
+<input id = "newEmail" value="{{post.email}}"></input>
+<br><br>
+<button onClick = "{editPost()}">Submit Edit</button>
+<br>
+<button id = 'id' value ='{{post.id}}' onClick = "{deletePost()}">Delete Post</button>
+{% endblock %}

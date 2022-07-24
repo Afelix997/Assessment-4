@@ -59,7 +59,7 @@
         "pk": 6,
         "fields": {
           "title": "Harry Potter and the Sorcerers Stone by J.K. Rowling  ",
-          "description": "Good condition copy. missing a few pages but you can watch the movie to fill in the blanks. $12",
+          "description": "Good condition copy. Missing a few pages but you can watch the movie to fill in the blanks. $12",
           "posted_by": "Jimbert Jimbinson",
           "email": "jimbert@jim.com",
           "category": 3
@@ -69,8 +69,8 @@
         "model": "craigslistjr.post",
         "pk": 7,
         "fields": {
-          "title": "USED MOP FOR SALE",
-          "description": "YOU CAN CLEAN UP YA FLOOR WITH IT. $10",
+          "title": "Used mop for sale",
+          "description": "You can clean ya floor with it. $10",
           "posted_by": "Bobert Bobinson",
           "email": "bobert@bob.com",
           "category": 4

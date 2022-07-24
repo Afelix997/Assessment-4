@@ -20,3 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('craigslistjr.urls')),
 ]
+
+handler404 = 'craigslistjr.views.handler404'
+handler500 = 'craigslistjr.views.handler500'

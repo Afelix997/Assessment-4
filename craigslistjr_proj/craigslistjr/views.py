@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 import json
 from .models import Category, Post
+from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
@@ -44,6 +45,33 @@ def post_new(request, category_id):
         newPost.save()
         return JsonResponse({})
     return render(request, 'craigslistjr/post_new.html')
+
 def post_view(request, category_id, post_id):
     post=  Post.objects.get(id = post_id)
-    return render(request, 'craigslistjr/post_view.html',{'post':post})
+    cat=Category.objects.get(id=category_id)
+    return render(request, 'craigslistjr/post_view.html',{'category':cat,'post':post})
+
+@csrf_exempt    
+def post_edit(request, category_id, post_id):
+    if request.method == "POST":
+        body = json.loads(request.body)
+        Post.objects.filter(id=body['id']).delete()
+        return JsonResponse({})
+    elif request.method == "PUT":
+        body = json.loads(request.body)
+        Post.objects.filter(id=post_id).update(title = body["title"], description = body["description"],posted_by  = body["posted_by"],email=body["email"])
+        return JsonResponse({})
+    cat=Category.objects.get(id=category_id)
+    post=Post.objects.get(id=post_id)
+    return render(request, 'craigslistjr/post_edit.html',{'category':cat,'post':post})
+
+def handler404(request, exception):
+    return render(request, "craigslistjr/404.html", {}) 
+
+
+def handler500(request, exception=None):
+    return render(request, "craigslistjr/404.html", {})
+
+
+
+
