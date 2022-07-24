@@ -1,0 +1,14 @@
+{% extends 'craigslistjr/layout.html' %}
+
+{%block content%}
+<h1>{{category.title}}</h1>
+<div>
+    <h2>{{post.title}}</h2>
+    <h4>{{post.description}}</h4>
+    <p>{{post.posted_by}}</p>
+    <p>{{post.email}}</p>
+    <a href = "">Edit Post</a>
+    <br>
+    <a href = "">Delete Post</a>
+</div>
+{% endblock %}

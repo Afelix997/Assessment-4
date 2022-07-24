@@ -1,0 +1,15 @@
+{% extends 'craigslistjr/layout.html' %}
+{%block scripts%} 
+<script src = "/static/js/cat_edit.js" defer></script>
+{%endblock%}
+
+{%block content%}
+
+<h1>Edit Category</h1>
+<label>Title:</label>
+<input id = "newTitle" value="{{category.title}}"></input>
+<br><br>
+<button onClick = "{editCat()}">Submit Edit</button>
+<br>
+<button id = 'id' value ='{{category.id}}' onClick = "{deleteCat()}">Delete Category</button>
+{% endblock %}

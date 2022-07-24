@@ -1,0 +1,20 @@
+{%extends "craigslistjr/layout.html"%}
+
+{%block content%}
+<div>
+    <h1>Welcome to Craigslist Jr</h1>
+</div>
+<div>
+    <ul>
+        {% for category in categories %}
+        <li >
+            <a href="{% url 'cat_view' category.id %}">{{category.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+<div>
+    <a href = "{% url 'cat_new' %}">Add New Category</a>
+</div>
+{%endblock%}

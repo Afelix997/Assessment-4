@@ -1,0 +1,22 @@
+{% extends 'craigslistjr/layout.html' %}
+{%block scripts%} 
+<script src = "/static/js/post_new.js" defer></script>
+{%endblock%}
+
+{%block content%}
+<h1>Add New Post</h1>
+<label>Title:</label>
+<input id = "newTitle"></input>
+<br>
+<label>Description:</label>
+<input id = "newDesc"></input>
+<br>
+<label>Posted By:</label>
+<input id = "newPostBy"></input>
+<br>
+<label>Email:</label>
+<input id = "newEmail"></input>
+<br>
+<br>
+<button onClick = "{newPost()}">Submit!</button>
+{% endblock %}

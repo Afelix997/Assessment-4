@@ -1,0 +1,15 @@
+{% extends 'craigslistjr/layout.html' %}
+
+{%block content%}
+<h1>{{category.title}}</h1>
+<div>
+    <ul>
+        {% for post in posts%}
+        <li><a href = "{% url 'post_view' category.id post.id%}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <a href = "{% url 'cat_edit' category.id %}">Edit Category</a>
+    <br>
+    <a href = "{% url 'post_new' category.id %}">Add New Post</a>
+</div>
+{% endblock %}

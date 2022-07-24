@@ -1,0 +1,13 @@
+{% extends 'craigslistjr/layout.html' %}
+{%block scripts%} 
+<script src = "/static/js/cat_new.js" defer></script>
+{%endblock%}
+
+{%block content%}
+
+<h1>Add New Category</h1>
+<label>Title:</label>
+<input id = "newTitle"></input>
+<br><br>
+<button onClick = "{newCat()}">Submit!</button>
+{% endblock %}

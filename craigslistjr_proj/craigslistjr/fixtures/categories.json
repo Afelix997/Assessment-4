@@ -1,0 +1,30 @@
+[
+    {
+      "model": "craigslistjr.category",
+      "pk": 1,
+      "fields": {
+        "title": "Activities"
+      }
+    },
+    {
+      "model": "craigslistjr.category",
+      "pk": 2,
+      "fields": {
+        "title": "Automotive"
+      }
+    },
+    {
+      "model": "craigslistjr.category",
+      "pk": 3,
+      "fields": {
+        "title": "Books"
+      }
+    },
+    {
+        "model": "craigslistjr.category",
+        "pk": 4,
+        "fields": {
+          "title": "Home"
+        }
+      }
+  ]

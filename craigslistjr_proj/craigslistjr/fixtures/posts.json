@@ -1,0 +1,90 @@
+[
+    {
+      "model": "craigslistjr.post",
+      "pk": 1,
+      "fields": {
+        "title": "Disc Golf Partner Wanted!!",
+        "description": "Disc golf is golf with a disc and I need someone to play with.",
+        "posted_by": "Bobert Bobinson",
+        "email": "bobert@bob.com",
+        "category": 1
+      }
+    },
+    {
+        "model": "craigslistjr.post",
+        "pk": 2,
+        "fields": {
+          "title": "Rock Climbers Club",
+          "description": "You like climbing rocks? Join the club bucko!",
+          "posted_by": "Laura Laurinson",
+          "email": "Laura@lau.com",
+          "category": 1
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 3,
+        "fields": {
+          "title": "1993 Jeep Wrangler For Sale!",
+          "description": "Good Condition Jeep Wrangler for $200,000. Price is firm as heck. I know what I got.",
+          "posted_by": "Laura Laurinson",
+          "email": "Laura@lau.com",
+          "category": 2
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 4,
+        "fields": {
+          "title": "Moped Wanted!!",
+          "description": "Watched a movie with a moped in it and now I want one. I got 5 bucks.",
+          "posted_by": "Jimbert Jimbinson",
+          "email": "jimbert@jim.com",
+          "category": 2
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 5,
+        "fields": {
+          "title": "Homemade Recipe Book!",
+          "description": "Homemade recipes just like Ma used to make! $10",
+          "posted_by": "Robert Robinson",
+          "email": "robert@rob.com",
+          "category": 3
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 6,
+        "fields": {
+          "title": "Harry Potter and the Sorcerers Stone by J.K. Rowling  ",
+          "description": "Good condition copy. missing a few pages but you can watch the movie to fill in the blanks. $12",
+          "posted_by": "Jimbert Jimbinson",
+          "email": "jimbert@jim.com",
+          "category": 3
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 7,
+        "fields": {
+          "title": "USED MOP FOR SALE",
+          "description": "YOU CAN CLEAN UP YA FLOOR WITH IT. $10",
+          "posted_by": "Bobert Bobinson",
+          "email": "bobert@bob.com",
+          "category": 4
+        }
+      },
+      {
+        "model": "craigslistjr.post",
+        "pk": 8,
+        "fields": {
+          "title": "Antique Lamp",
+          "description": "1700 century antique lamp used by Alexander the Great and Gandhi. $4",
+          "posted_by": "Robert Robinson",
+          "email": "robert@rob.com",
+          "category": 4
+        }
+      }
+]
