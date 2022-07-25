@@ -22,6 +22,7 @@ def cat_new(request):
         newCat = Category(title = body["title"])
         newCat.save()
         return JsonResponse({})
+    
     return render(request, 'craigslistjr/cat_new.html')
 
 @csrf_exempt
@@ -44,7 +45,8 @@ def post_new(request, category_id):
         newPost = Post(title = body["title"], description = body["description"],posted_by  = body["posted_by"],email=body["email"], category_id = category_id)
         newPost.save()
         return JsonResponse({})
-    return render(request, 'craigslistjr/post_new.html')
+    cat=Category.objects.get(id=category_id)
+    return render(request, 'craigslistjr/post_new.html', {'category':cat})
 
 def post_view(request, category_id, post_id):
     post=  Post.objects.get(id = post_id)
